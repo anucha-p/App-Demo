@@ -6,7 +6,7 @@ from xml.etree import ElementTree
 import pandas as pd
 import pyodide_http # https://github.com/whitphx/stlite/blob/main/packages/desktop/README.md
 pyodide_http.patch_all()
-import predictor
+# import predictor
 import streamlit.components.v1 as components
 
 st.set_page_config(page_title="App Title", layout='wide')
