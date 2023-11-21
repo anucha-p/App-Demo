@@ -21,10 +21,7 @@ st.markdown(f"""
             padding-left: {1}rem;
             padding-bottom: {10}rem;
         }}
-        .appview-container .main {{
-            color: {"black"};
-            background-color: {"#fff"};
-        }}
+
     </style>
     """,
     unsafe_allow_html=True)
