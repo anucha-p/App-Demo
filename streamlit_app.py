@@ -33,8 +33,8 @@ st.markdown(f"""
 # response = requests.request(url="https://streamlit.io/",method='GET')
 # st.write(response.status_code)
 
-model_path = "/mnt/ssd/python_projects/MPI_pred/streamlit_lite/streamlit_app/model.pth"
-model = predictor.load_model(model_path)
+# model_path = "/mnt/ssd/python_projects/MPI_pred/streamlit_lite/streamlit_app/model.pth"
+# model = predictor.load_model(model_path)
 
 def read_dcm(dcm_img):
     ds = dcmread(dcm_img)
@@ -313,8 +313,8 @@ with st.container():
 with st.container():
     if report_xml is not None and stress_dcm is not None and rest_dcm is not None:
         if st.button('Proceed'):
-            result  = predictor.predict(model, stress_ds.pixel_array, rest_ds.pixel_array, report_df)
+            # result  = predictor.predict(model, stress_ds.pixel_array, rest_ds.pixel_array, report_df)
             
             st.subheader(':blue[Model Prediction]')
             st.text('** in progress **')
-            st.write(result)
+            st.write('result')
