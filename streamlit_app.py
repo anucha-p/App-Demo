@@ -15,7 +15,7 @@ st.title("Demo")
 st.markdown(f"""
     <style>
         .appview-container .main .block-container{{
-            max-width: {1200}px;
+            max-width: {1000}px;
             padding-top: {5}rem;
             padding-right: {1}rem;
             padding-left: {1}rem;
